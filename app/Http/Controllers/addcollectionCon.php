@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class addfitplanCon extends FirebaseController
+class addcollectionCon extends FirebaseController
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class addfitplanCon extends FirebaseController
      */
     public function index()
     {
-        return view('addfitplan');
+        return view('addcollection');
     }
 
     /**
@@ -34,23 +34,14 @@ class addfitplanCon extends FirebaseController
      */
     public function store(Request $request)
     {
-        
         $data = $request->all();
-        $this->push('FitnessPlan',[
-            "age" => [
-        "end" => $data['ageEnd'],
-        "start" => $data['ageStart']
-      ],
+        $this->push('WorkoutCollections',[
+            
       "avgtime" => $data['avgTime'],
-      "bmi" => [
-        "end" => $data['bmiEnd'],
-        "start" => $data['bmiStart']
-      ],
-      "category" => $data['category'],
-      "difficult" => $data['difficult'],
-      "equipment" => [ $data['equipment0'], $data['equipment1'] ],
-      "gender" => [ $data['gender0'], $data['gender1'] ],
-      "intensity" => $data['intensity'],
+      "description" => $data['description'],
+      "equipment" => [ $data['equipment0'], $data['equipment1'], $data['equipment2']],
+      "name" => $data['name'],
+       "pic" => $data['pic'],
       "weeks" => [  [
         "days" => [ [  
             "bodyparts" => [ $data['bodyParts1'] ],
@@ -1002,7 +993,7 @@ class addfitplanCon extends FirebaseController
                 ]
 
         ]);
-    return view('addfitplan', ["message" => "Add Success."]);
+    return view('addcollection', ["message" => "Add Success."]);
     }
 
     /**

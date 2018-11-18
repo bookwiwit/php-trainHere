@@ -67,9 +67,8 @@
 <body class="content">
 	<h1 class="h1">Fitness Plan</h1>
 	<div>
-	<a href="/addfitplan"><button class="add">Add Data for <br>Lose Weight</button></a>
-	<a href="/addfitplan2"><button class="add">Add Data for Muscle Gain</button></a><br>
-	<a href="/editfitplan"><button class="edit">Edit Data</button></a>
+	<a href="/addfitplan"><button class="add">Add Data for <br>Lose Weight</button></a><br>
+	<a href="/editfitplan"><button class="edit">Edit Data</button></a><br>
 	<a href="/delfitplan"><button class="delete">Delete Data</button></a>
 	</div>
 

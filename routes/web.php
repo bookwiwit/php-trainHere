@@ -33,6 +33,12 @@ Route::get('fitplan', 'fitplanCon@index');
 Route::get('addfitplan', 'addfitplanCon@index');
 Route::post('addfitplan', 'addfitplanCon@store');
 
+Route::get('editfitplan', 'editfitplanCon@index');
+Route::post('editfitplan', 'editfitplanCon@store');
+
+Route::get('delfitplan', 'delfitplanCon@index');
+Route::post('delfitplan', 'delfitplanCon@store');
+
 Route::get('addfitplan2', 'addfitplanCon@index');
 Route::post('addfitplan2', 'addfitplanCon@store');
 
@@ -81,6 +87,15 @@ Route::get('deluser', 'deluserCon@index');
 Route::post('deluser', 'deluserCon@store');
 
 Route::get('collection', 'collectionCon@index');
+
+Route::get('addcollection', 'addcollectionCon@index');
+Route::post('addcollection', 'addcollectionCon@store');
+
+Route::get('editcollection', 'editcollectionCon@index');
+Route::post('editcollection', 'editcollectionCon@store');
+
+Route::get('delcollection', 'delcollectionCon@index');
+Route::post('delcollection', 'delcollectionCon@store');
 // Route::get('delete', 'controller@function');
 
 
