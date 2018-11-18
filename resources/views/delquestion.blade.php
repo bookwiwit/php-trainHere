@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-	<title>Edit Question</title>
+	<title>Delete Question</title>
 </head>
 <style type="text/css">
 	.button{
@@ -39,73 +39,26 @@
 	}
 </style>
 <body class="content">
-	<form action="/editquestion" method="POST">
+	<form action="/delquestion" method="POST">
 		{{ csrf_field() }}
-		<h1 class="h1">Edit Question</h1>
+		<h1 class="h1">Delete Question</h1>
 		<center>
 		<table>
 			<tr>
 				<td>
-					Number of Question
+					Question Number
 				</td>
 				<td>
 					<input type="text" name="num">
 				</td>
 			</tr>
-			<tr>
-				<td>
-				Question
-				</td>
-				<td>
-					<input type="text" name="question">
-				</td>
-			</tr>
-			<tr>
-				<td>
-				Choice 1
-				</td>
-				<td>
-					<input type="text" name="choice1">
-				</td>
-			</tr>
-			<tr>
-				<td>
-				Choice 2
-				</td>
-				<td>
-					<input type="text" name="choice2">
-				</td>
-			</tr>
-			<tr>
-				<td>
-				Choice 3
-				</td>
-				<td>
-					<input type="text" name="choice3">
-				</td>
-			</tr>
-			<tr>
-				<td>
-				Choice 4
-				</td>
-				<td>
-					<input type="text" name="choice4">
-				</td>
-			</tr>
-			<tr>
-				<td>
-				Choice 5
-				</td>
-				<td>
-					<input type="text" name="choice5">
-				</td>
-			</tr>	
+			
 		</table>
 	</center>
 		
 		
 
-		<button type="submit" class="button">Edit Data</button>
+		<button type="submit" class="button">Delete Data</button>
 	</form>
 	<div>
 			@if(isset($message))

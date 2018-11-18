@@ -45,7 +45,7 @@
 			Name <input type="text" name="name" style="margin-left: 55px; border-radius: 30px;"><br>
 			Lastname <input type="text" name="lastname" style="margin-left: 10px; border-radius: 30px;"><br>
 			Username <input type="text" name="username" style="margin-left: 8px; border-radius: 30px;"><br>
-			Password <input type="text" name="password" style="margin-left: 16px; border-radius: 30px;">
+			Password <input type="password" name="password" style="margin-left: 16px; border-radius: 30px;">
 		</div>
 			<button type="submit" class="button">Submit</button>
 			
