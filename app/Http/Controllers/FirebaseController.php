@@ -55,7 +55,7 @@ class FirebaseController extends Controller
         }
 
 
-    public function deleteData($key, $key2, $data){
+    public function deleteData($key, $key2){
         $serviceAccount = ServiceAccount::fromJsonFile(__DIR__.'/modal-82ed6-firebase-adminsdk-xjhls-fff96667b6.json');
         $firebase = (new Factory)
             ->withServiceAccount($serviceAccount)
@@ -63,7 +63,7 @@ class FirebaseController extends Controller
         
          $database = $firebase->getDatabase();
 
-         $ref = $database->getReference($key.$key2)->remove($data);
+         $ref = $database->getReference($key.$key2)->remove();
         }
     
 

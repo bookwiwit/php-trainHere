@@ -41,6 +41,12 @@ Route::get('foodnutrition', 'foodnutritionCon@index');
 Route::get('addfoodnutrition', 'addfoodnutritionCon@index');
 Route::post('addfoodnutrition', 'addfoodnutritionCon@store');
 
+Route::get('editfoodnutrition', 'editfoodnutritionCon@index');
+Route::post('editfoodnutrition', 'editfoodnutritionCon@store');
+
+Route::get('delfoodnutrition', 'delfoodnutritionCon@index');
+Route::post('delfoodnutrition', 'delfoodnutritionCon@store');
+
 Route::get('video', 'videoCon@index');
 
 Route::get('addvideo', 'addvideoCon@index');
@@ -48,6 +54,9 @@ Route::post('addvideo', 'addvideoCon@store');
 
 Route::get('editvideo', 'editvideoCon@index');
 Route::post('editvideo', 'editvideoCon@store');
+
+Route::get('delvideo', 'delvideoCon@index');
+Route::post('delvideo', 'delvideoCon@store');
 
 Route::get('question', 'questionCon@index');
 
@@ -57,8 +66,8 @@ Route::post('addquestion', 'addquestionCon@store');
 Route::get('editquestion', 'editquestionCon@index');
 Route::post('editquestion', 'editquestionCon@store');
 
-Route::get('editfoodnutrition', 'editfoodnutritionCon@index');
-Route::post('editfoodnutrition', 'editfoodnutritionCon@store');
+Route::get('delquestion', 'delquestionCon@index');
+Route::post('delquestion', 'delquestionCon@store');
 
 Route::get('user', 'userCon@index');
 
@@ -67,6 +76,9 @@ Route::post('adduser', 'adduserCon@store');
 
 Route::get('edituser', 'edituserCon@index');
 Route::post('edituser', 'edituserCon@store');
+
+Route::get('deluser', 'deluserCon@index');
+Route::post('deluser', 'deluserCon@store');
 
 Route::get('collection', 'collectionCon@index');
 // Route::get('delete', 'controller@function');

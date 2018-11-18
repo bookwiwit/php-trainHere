@@ -62,6 +62,14 @@
 			</tr>
 			<tr>
 				<td>
+					Category
+				</td>
+				<td>
+					<input type="text" name="category">
+				</td>
+			</tr>
+			<tr>
+				<td>
 					Fat
 				</td>
 				<td>

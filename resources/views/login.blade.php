@@ -43,7 +43,7 @@
 	<img src="https://image.flaticon.com/icons/svg/755/755359.svg" height="250" width="250"><br><br>
 	<div class="p">
 		Username <input type="text" name="username" style="margin-left: 8px; border-radius: 30px;"><br>
-		Password <input type="text" name="password" style="margin-left: 16px; border-radius: 30px;"><br>
+		Password <input type="password" name="password" style="margin-left: 16px; border-radius: 30px;"><br>
 	</div>
 	
 	<button type="submit" class="button">Log in</button>

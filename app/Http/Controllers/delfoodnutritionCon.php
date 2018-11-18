@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class editquestionCon extends FirebaseController
+class delfoodnutritionCon extends FirebaseController
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +13,8 @@ class editquestionCon extends FirebaseController
      */
     public function index()
     {
-        $this->querySnapshot('Questionnaires/-LBL-ic5iz7DLvBjvDKP');
-        
-        return view('editquestion');
+        $this->querySnapshot('FoodNutrition');
+        return view('delfoodnutrition');
     }
 
     /**
@@ -36,16 +35,10 @@ class editquestionCon extends FirebaseController
      */
     public function store(Request $request)
     {
-        $i = $request->num;
         $data = $request->all();
-        $this->updateData('Questionnaires/-LBL-ic5iz7DLvBjvDKP/', 'Question'.$i, [
-            
-            "choices" => [ $data['choice1'],$data['choice2'],$data['choice3'],$data['choice4'],$data['choice5'] ],
-            "question" => $data['question']
-      
-        ]);
+          $this->deleteData('FoodNutrition/',$request->key2);
 
-        return view('editquestion', ["message" => "Edit Success."]);
+        return view('delfoodnutrition', ["message" => "Delete Success."]);
     }
 
     /**
